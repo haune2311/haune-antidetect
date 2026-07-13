@@ -1,0 +1,18 @@
+# Haune — PUBLIC SHOWCASE repo.
+#
+# The implementation is PROPRIETARY and deliberately NOT published here: the C++
+# fingerprint patch set, the coherent identity generator, the Node/.NET launcher,
+# the build configs, and the internal design docs are kept private/local (see LICENSE).
+# This repo publishes only the overview (README) + license + a demo screenshot.
+#
+# Strategy: ignore everything, then allow only the public files.
+
+/*
+!/.gitignore
+!/README.md
+!/LICENSE
+!/docs/
+/docs/*
+!/docs/assets/
+/docs/assets/*
+!/docs/assets/demo-sannysoft.png
