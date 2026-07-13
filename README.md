@@ -30,7 +30,18 @@ một trình duyệt thật.
 
 <p align="center"><em>Real captures — no CAPTCHA solver, no proxy tricks. It just looks human.</em></p>
 
-<p align="center"><a href="#-tiếng-việt">🇻🇳 Tiếng Việt</a> · <a href="#-english">🇬🇧 English</a> · <a href="LICENSE">📄 License</a></p>
+<h3 align="center">How it compares</h3>
+
+| | playwright-stealth | undetected-chromedriver | Camoufox | **HauneBrowser** |
+|---|:---:|:---:|:---:|:---:|
+| Patch level | JS injection | config patches | C++ (Firefox) | **C++ (Chromium)** |
+| reCAPTCHA v3 | 0.3–0.5 | 0.3–0.7 | 0.7–0.9 | **0.9** |
+| Cloudflare Turnstile | sometimes | sometimes | pass | **pass** |
+| FingerprintJS | detected | detected | pass | **pass (~99%)** |
+| Survives Chrome updates | breaks often | breaks often | yes | **yes** |
+| Native Playwright API | yes | no (Selenium) | no | **yes** |
+
+<p align="center"><a href="#-tiếng-việt">🇻🇳 Tiếng Việt</a> · <a href="#-english">🇬🇧 English</a> · <a href="LICENSE">📄 License</a> · <a href="https://haune2311.github.io/haune-antidetect/">🌐 Website</a></p>
 
 ---
 

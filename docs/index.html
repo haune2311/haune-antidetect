@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HauneBrowser — anti-detect browser that passes bot detection</title>
+<meta name="description" content="HauneBrowser — anti-detect Chromium 148 with source-level fingerprint defense. Passes FingerprintJS, Cloudflare Turnstile, reCAPTCHA v3. Drop-in Python & .NET clients.">
+<meta property="og:title" content="HauneBrowser — anti-detect browser">
+<meta property="og:description" content="Anti-detect Chromium that passes every bot detection test. pip install haune.">
+<meta property="og:image" content="assets/demo.gif">
+<style>
+  :root{--bg:#0b0e14;--card:#141924;--line:#232a3a;--tx:#e6e9ef;--mut:#95a1b8;--acc:#5b8cff;--grn:#37d67a}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.6 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
+  a{color:var(--acc);text-decoration:none}
+  .wrap{max-width:960px;margin:0 auto;padding:0 20px}
+  header{text-align:center;padding:64px 20px 32px}
+  h1{font-size:52px;margin:.2em 0 .1em;letter-spacing:-1px}
+  .tag{font-size:21px;color:var(--mut);max-width:620px;margin:0 auto 22px}
+  .badges img{margin:3px}
+  .cta{margin:26px 0 8px}
+  .btn{display:inline-block;padding:12px 22px;border-radius:10px;font-weight:600;margin:6px}
+  .btn.p{background:var(--acc);color:#fff}
+  .btn.s{background:var(--card);color:var(--tx);border:1px solid var(--line)}
+  code,pre{font-family:'SF Mono',ui-monospace,Consolas,monospace}
+  .hero img{max-width:100%;border-radius:12px;border:1px solid var(--line);margin-top:24px}
+  section{padding:44px 0;border-top:1px solid var(--line)}
+  h2{font-size:30px;text-align:center;margin:0 0 28px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px}
+  .card h3{margin:0 0 6px;font-size:17px}
+  .card p{margin:0;color:var(--mut);font-size:14.5px}
+  table{width:100%;border-collapse:collapse;font-size:14.5px}
+  th,td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left}
+  th{color:var(--mut);font-weight:600}
+  .ok{color:var(--grn);font-weight:600}
+  .no{color:#7d8698}
+  .install pre{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px;overflow:auto}
+  .gallery{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .gallery figure{margin:0}
+  .gallery img{width:100%;border-radius:10px;border:1px solid var(--line)}
+  .gallery figcaption{color:var(--mut);font-size:13px;margin-top:6px;text-align:center}
+  footer{text-align:center;color:var(--mut);font-size:13.5px;padding:40px 20px}
+  @media(max-width:640px){h1{font-size:38px}.gallery{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header class="wrap hero">
+  <h1>🛡️ HauneBrowser</h1>
+  <p class="tag">Anti-detect browser that passes every bot detection test. Fingerprints handled in the browser core — detectors see a real browser, because it is one.</p>
+  <p class="badges">
+    <img src="https://img.shields.io/badge/Chromium-148-4285F4" alt="Chromium 148">
+    <img src="https://img.shields.io/badge/FingerprintJS-~99%25%20CLEAN-brightgreen" alt="FingerprintJS">
+    <img src="https://img.shields.io/badge/clients-Python%20%C2%B7%20.NET-512BD4" alt="clients">
+    <img src="https://img.shields.io/badge/platform-Windows-0078D6" alt="Windows">
+  </p>
+  <div class="cta">
+    <a class="btn p" href="https://github.com/haune2311/haune-antidetect">⭐ GitHub</a>
+    <a class="btn s" href="#install">Get started</a>
+  </div>
+  <img src="assets/demo.gif" alt="HauneBrowser passing bot-detection tests">
+</header>
+
+<section class="wrap">
+  <h2>Why HauneBrowser</h2>
+  <div class="grid">
+    <div class="card"><h3>🟢 Clean by default</h3><p>It just passes — no tuning. FingerprintJS, Cloudflare Turnstile, reCAPTCHA v3, BrowserScan, CreepJS.</p></div>
+    <div class="card"><h3>🧬 Source-level, not JS</h3><p>Fingerprints modified at the C++ level and compiled in. <code>[native code]</code> everywhere — nothing for stealth detectors to flag.</p></div>
+    <div class="card"><h3>🎭 Coherent identities</h3><p>One seed = one stable device. UA, GPU, fonts, timezone all consistent. 6 billion+ unique, non-colliding profiles.</p></div>
+    <div class="card"><h3>🌐 Auto GeoIP</h3><p>Timezone, locale, geolocation and WebRTC IP auto-match your proxy exit. One flag.</p></div>
+    <div class="card"><h3>🧩 Drop-in clients</h3><p>Python &amp; .NET. Swap a few lines, keep your automation code. Binary auto-downloads.</p></div>
+    <div class="card"><h3>🔒 Survives updates</h3><p>Patched at the source — doesn't break on every Chrome release like JS-injection tools.</p></div>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2>Passes the tests</h2>
+  <div class="gallery">
+    <figure><img src="assets/test-deviceinfo.png" alt="deviceandbrowserinfo"><figcaption>deviceandbrowserinfo — "You are human!"</figcaption></figure>
+    <figure><img src="assets/test-browserscan.png" alt="BrowserScan"><figcaption>BrowserScan — Normal</figcaption></figure>
+    <figure><img src="assets/test-recaptcha.png" alt="reCAPTCHA v3 0.9"><figcaption>reCAPTCHA v3 — score 0.9</figcaption></figure>
+    <figure><img src="assets/demo-sannysoft.png" alt="sannysoft"><figcaption>bot.sannysoft.com — all green</figcaption></figure>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2>How it compares</h2>
+  <table>
+    <tr><th>Feature</th><th>playwright-stealth</th><th>undetected-chromedriver</th><th>Camoufox</th><th>HauneBrowser</th></tr>
+    <tr><td>Patch level</td><td class="no">JS injection</td><td class="no">Config patches</td><td>C++ (Firefox)</td><td class="ok">C++ (Chromium)</td></tr>
+    <tr><td>reCAPTCHA v3</td><td class="no">0.3–0.5</td><td class="no">0.3–0.7</td><td>0.7–0.9</td><td class="ok">0.9</td></tr>
+    <tr><td>Cloudflare Turnstile</td><td class="no">Sometimes</td><td class="no">Sometimes</td><td class="ok">Pass</td><td class="ok">Pass</td></tr>
+    <tr><td>FingerprintJS</td><td class="no">Detected</td><td class="no">Detected</td><td class="ok">Pass</td><td class="ok">Pass (~99%)</td></tr>
+    <tr><td>Survives Chrome updates</td><td class="no">Breaks often</td><td class="no">Breaks often</td><td class="ok">Yes</td><td class="ok">Yes</td></tr>
+    <tr><td>Engine</td><td>Chromium</td><td>Chrome</td><td>Firefox</td><td class="ok">Chromium</td></tr>
+    <tr><td>Native Playwright API</td><td class="ok">Yes</td><td class="no">No (Selenium)</td><td class="no">No</td><td class="ok">Yes</td></tr>
+  </table>
+</section>
+
+<section class="wrap install" id="install">
+  <h2>Get started</h2>
+  <p>First run auto-downloads the browser (self-contained, cached). Zero config.</p>
+  <p><b>Python</b></p>
+<pre>pip install haune
+
+from haune import launch
+browser = launch(proxy="http://user:pass@host:port")
+page = browser.new_page()
+page.goto("https://example.com")
+browser.close()</pre>
+  <p><b>.NET 8</b></p>
+<pre>dotnet add package Haune
+
+using Haune;
+await using var browser = await HauneLauncher.LaunchAsync(new LaunchOptions { Headless = false });
+var page = await browser.NewPageAsync();
+await page.GotoAsync("https://example.com");</pre>
+</section>
+
+<footer>
+  © 2026 Haune. All Rights Reserved. Proprietary — for authorized privacy research &amp; testing only.
+  · <a href="https://github.com/haune2311/haune-antidetect">GitHub</a>
+</footer>
+
+</body>
+</html>

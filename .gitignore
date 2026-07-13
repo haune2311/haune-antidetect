@@ -13,9 +13,11 @@
 !/LICENSE
 !/docs/
 /docs/*
+!/docs/index.html
 !/docs/assets/
 /docs/assets/*
 !/docs/assets/*.png
+!/docs/assets/*.gif
 !/python/
 /python/**/__pycache__/
 /python/**/*.egg-info/
