@@ -23,8 +23,12 @@ DEFAULT_URL = os.environ.get(
     "HAUNE_BROWSER_URL",
     f"https://github.com/haune2311/haune/releases/download/{RELEASE_TAG}/HauneBrowser-win-x64.zip",
 )
-# Optional: SHA-256 of the archive (set $HAUNE_BROWSER_SHA256) to verify authenticity.
-EXPECTED_SHA256 = os.environ.get("HAUNE_BROWSER_SHA256")
+# SHA-256 of the release archive — verified before extraction so a tampered/compromised
+# mirror is rejected. Override with $HAUNE_BROWSER_SHA256 when pinning a different build.
+EXPECTED_SHA256 = os.environ.get(
+    "HAUNE_BROWSER_SHA256",
+    "1215f9005e703dbe01690d28b46f1d08a6572de5f1375b13a1b259905db9adcc",
+)
 
 _CACHE = Path.home() / ".haune" / "bin" / RELEASE_TAG
 _EXE_NAME = "chrome.exe"
