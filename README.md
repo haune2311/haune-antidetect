@@ -17,10 +17,18 @@ một trình duyệt thật.
 <img src="https://img.shields.io/badge/license-Proprietary%20%C2%B7%20All%20Rights%20Reserved-red" alt="Proprietary license">
 </p>
 
-<p align="center">
-<img src="docs/assets/demo-sannysoft.png" width="620" alt="Haune — all green on bot.sannysoft.com">
-<br><em>bot.sannysoft.com — sạch toàn bộ.</em>
-</p>
+<table align="center">
+<tr>
+<td width="50%" align="center"><img src="docs/assets/test-deviceinfo.png" alt="You are human"><br><sub><b>deviceandbrowserinfo</b> — "You are human!" · <code>isBot: false</code></sub></td>
+<td width="50%" align="center"><img src="docs/assets/test-browserscan.png" alt="BrowserScan Normal"><br><sub><b>BrowserScan</b> — Test Results: <b>Normal</b></sub></td>
+</tr>
+<tr>
+<td width="50%" align="center"><img src="docs/assets/test-recaptcha.png" alt="reCAPTCHA v3 score 0.9"><br><sub><b>reCAPTCHA v3</b> — score <b>0.9</b> (human level)</sub></td>
+<td width="50%" align="center"><img src="docs/assets/demo-sannysoft.png" alt="sannysoft all green"><br><sub><b>bot.sannysoft.com</b> — all green</sub></td>
+</tr>
+</table>
+
+<p align="center"><em>Real captures — no CAPTCHA solver, no proxy tricks. It just looks human.</em></p>
 
 <p align="center"><a href="#-tiếng-việt">🇻🇳 Tiếng Việt</a> · <a href="#-english">🇬🇧 English</a> · <a href="LICENSE">📄 License</a></p>
 
