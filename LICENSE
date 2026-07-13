@@ -1,9 +1,9 @@
 Haune — Proprietary Software License
 Copyright (c) 2026 Haune Builder (github.com/haune2311). All Rights Reserved.
 
-This software and its source code, including the launcher, the .NET library, the
-fingerprint synthesizer, the Chromium patch set, and all accompanying documentation
-(collectively, the "Software"), are the exclusive property of the copyright holder.
+This software, including all of its source code, binaries, and accompanying
+documentation (collectively, the "Software"), is the exclusive property of the
+copyright holder.
 
 NO PERMISSION IS GRANTED to any person or entity to use, copy, reproduce, modify,
 merge, publish, distribute, sublicense, sell, host, mirror, or create derivative
@@ -15,13 +15,10 @@ the Software for any purpose other than as expressly authorized in writing by th
 copyright holder is prohibited. Unauthorized use is a violation of applicable
 copyright law and may result in legal action.
 
-THIRD-PARTY COMPONENTS. The Software builds on and interoperates with third-party
-open-source projects — notably The Chromium Project (BSD-3-Clause) and the
-fingerprint-chromium / ungoogled-chromium lineage — which remain governed by their
-own respective licenses. This proprietary license applies only to the original works
-authored by the copyright holder and does not purport to relicense any third-party
-component. Nothing herein removes rights you may have under those upstream licenses
-with respect to those upstream components.
+THIRD-PARTY COMPONENTS. The Software may incorporate third-party open-source
+components, each of which remains governed by its own respective license. This
+proprietary license applies only to the original works authored by the copyright
+holder and does not purport to relicense any third-party component.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
 INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A

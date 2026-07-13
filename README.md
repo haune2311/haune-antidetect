@@ -42,7 +42,7 @@ timezone. Hơn **6 tỉ** danh tính duy nhất, không trùng.
 - 🌐 **GeoIP tự động** — timezone / locale / geolocation / WebRTC IP tự khớp exit của proxy.
 - 🎭 **Danh tính mạch lạc** — canvas, WebGL, WebGPU, audio, fonts, GPU, screen, WebRTC,
   User-Agent, navigator… tất cả nhất quán với nhau.
-- 🧩 **Drop-in Playwright** — thư viện `.NET 8` + launcher Node, đổi vài dòng là dùng.
+- 🧩 **SDK riêng** — thư viện `.NET 8` + launcher Node, tích hợp trong vài dòng.
 - 🔒 **Ổn định qua các bản Chrome update** — vá ở source, không vỡ như các tool chèn JS.
 
 ### Kết quả
@@ -105,7 +105,7 @@ fonts and timezone. **6 billion+** unique, non-colliding identities.
 - 🌐 **Automatic GeoIP** — timezone / locale / geolocation / WebRTC IP auto-match the proxy exit.
 - 🎭 **Coherent identity** — canvas, WebGL, WebGPU, audio, fonts, GPU, screen, WebRTC,
   User-Agent, navigator… all consistent with each other.
-- 🧩 **Drop-in Playwright** — `.NET 8` library + Node launcher, swap a few lines and go.
+- 🧩 **First-class SDK** — `.NET 8` library + Node launcher, integrate in a few lines.
 - 🔒 **Survives Chrome updates** — patched at the source, doesn't break like JS-injection tools.
 
 ### Results
