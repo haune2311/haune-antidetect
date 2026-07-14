@@ -191,12 +191,4 @@ copyright holder's written permission. See [`LICENSE`](LICENSE).
 
 ---
 
-## ⭐ Star History
-
-<p align="center">
-<a href="https://star-history.com/#haune2311/haune-antidetect&Date">
-<img src="https://api.star-history.com/svg?repos=haune2311/haune-antidetect&type=Date" alt="Star History Chart" width="600">
-</a>
-</p>
-
-<p align="center">Thấy hữu ích? <b><a href="https://github.com/haune2311/haune-antidetect">⭐ Star repo</a></b> &amp; <b>👁 Watch</b> để ủng hộ · Found it useful? <b>⭐ Star</b> &amp; <b>👁 Watch</b> to support.</p>
+<p align="center">Thấy hữu ích? <b><a href="https://github.com/haune2311/haune-antidetect">⭐ Star repo</a></b> &amp; <b>👁 Watch</b> để ủng hộ · Found it useful? <b><a href="https://github.com/haune2311/haune-antidetect">⭐ Star</a></b> &amp; <b>👁 Watch</b> to support.</p>
