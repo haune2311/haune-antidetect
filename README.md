@@ -65,7 +65,7 @@ timezone. Hơn **6 tỉ** danh tính duy nhất, không trùng.
 ### Nổi bật
 
 - 🟢 **Sạch mặc định** — chạy là qua, không cần tinh chỉnh.
-- 🖐️ **`humanize`** — chuột, gõ phím, cuộn trang như người thật (một cờ là qua behavioral).
+- 🖐️ **Humanize (thư viện .NET)** — chuột Bézier + gõ phím có nhịp/typo tự sửa + cuộn ramp (`HumanPage`, tái lập theo seed), giảm dấu vết automation thô. Là **lớp hỗ trợ hành vi phía driver — không phải "một cờ là qua"**: behavioral hiện đại (reCAPTCHA v3, Cloudflare, DataDome) dùng nhiều tín hiệu, humanize giúp giảm tell chứ không đảm bảo bypass.
 - 🌐 **GeoIP tự động** — timezone / locale / geolocation / WebRTC IP tự khớp exit của proxy.
 - 🎭 **Danh tính mạch lạc** — canvas, WebGL, WebGPU, audio, fonts, GPU, screen, WebRTC,
   User-Agent, navigator… tất cả nhất quán với nhau.
@@ -134,7 +134,7 @@ fonts and timezone. **6 billion+** unique, non-colliding identities.
 ### Highlights
 
 - 🟢 **Clean by default** — it just passes, no tuning needed.
-- 🖐️ **`humanize`** — human-like mouse, typing and scroll (one flag clears behavioral checks).
+- 🖐️ **Humanize (.NET library)** — Bézier mouse + jittered typing with self-corrected typos + ramped scroll (`HumanPage`, seed-reproducible), reducing naive-automation tells. A **driver-side behavioral aid, not a one-flag bypass**: modern behavioral checks (reCAPTCHA v3, Cloudflare, DataDome) score many signals — humanize lowers the obvious tells, it does not guarantee a pass.
 - 🌐 **Automatic GeoIP** — timezone / locale / geolocation / WebRTC IP auto-match the proxy exit.
 - 🎭 **Coherent identity** — canvas, WebGL, WebGPU, audio, fonts, GPU, screen, WebRTC,
   User-Agent, navigator… all consistent with each other.

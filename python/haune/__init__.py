@@ -13,7 +13,12 @@ shipped. Three lines to unblock:
 
 Every ``seed`` reproduces the same device. With a proxy, timezone / geolocation / WebRTC
 IP auto-match the exit (``geoip=True`` by default). ``spoof_gpu=True`` also spoofs the GPU
-string; ``humanize`` / behavioral helpers ship in the binary.
+string.
+
+Note: the binary handles *fingerprint* only. Behavioral *humanization* (human-like mouse /
+typing / scroll) is a driver-side concern, not compiled into the binary — drive input via
+Playwright's own APIs (``page.mouse`` / ``page.keyboard``). The .NET library ships a
+ready-made ``HumanPage`` helper; this Python client does not include one yet.
 """
 from __future__ import annotations
 
