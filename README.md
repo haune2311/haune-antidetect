@@ -49,7 +49,7 @@ một trình duyệt thật.
 | Survives Chrome updates | breaks often | breaks often | yes | **yes** |
 | Native Playwright API | yes | no (Selenium) | no | **yes** |
 
-<p align="center"><a href="#-tiếng-việt">🇻🇳 Tiếng Việt</a> · <a href="#-english">🇬🇧 English</a> · <a href="LICENSE">📄 License</a> · <a href="https://haune2311.github.io/haune-antidetect/">🌐 Website</a></p>
+<p align="center"><a href="#-tiếng-việt">🇻🇳 Tiếng Việt</a> · <a href="#-english">🇬🇧 English</a> · <a href="LICENSE">📄 License</a> · <a href="https://haune2311.github.io/haune-antidetect/">🌐 Website</a> · <a href="https://telegram.me/helloword_dev">💬 Telegram</a></p>
 
 ---
 
@@ -188,6 +188,18 @@ Every `seed` reproduces a device. For heavily-protected sites: add a residential
 © 2026 Haune Builder (github.com/haune2311). **All Rights Reserved.** Proprietary software —
 no copying, cloning, forking, modification, redistribution, or reuse in any form without the
 copyright holder's written permission. See [`LICENSE`](LICENSE).
+
+---
+
+## 💬 Liên hệ / Contact
+
+Hỏi đáp · hỗ trợ · hợp tác — Telegram **[@helloword_dev](https://telegram.me/helloword_dev)**
+hoặc GitHub **[Discussions](https://github.com/haune2311/haune-antidetect/discussions)**.
+Questions · support · partnership — Telegram **[@helloword_dev](https://telegram.me/helloword_dev)** or GitHub Discussions.
+
+<p align="center">
+<a href="https://telegram.me/helloword_dev"><img src="https://img.shields.io/badge/Telegram-@helloword__dev-26A5E4?logo=telegram&logoColor=white" alt="Telegram"></a>
+</p>
 
 ---
 
